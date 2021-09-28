@@ -9,13 +9,14 @@ for (let i= word.length - 1; i >= 0; i--){
 console.log(reverseWord);
 
 //capitalze the first letter of each word in a string
-let phrase ="beautiful lie";
+let myphrase ="beautiful lie is a great song";
 //phrase[0].toUpperCase();
 //console.log(phrase[0].toUpperCase() + phrase.substring(1));
-let splitItUp = phrase.split(" ");
+let splitItUp = myphrase.split(" ");
 
 for(let i = 0; i < splitItUp.length; i++){
     splitItUp[i] = splitItUp[i][0].toUpperCase() + splitItUp[i].substr(1);
 }
-console.log(splitItUp);
+console.log(splitItUp.join(" "));
+
 //compress a string of characters
