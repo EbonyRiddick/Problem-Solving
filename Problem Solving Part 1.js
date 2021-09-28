@@ -20,3 +20,28 @@ for(let i = 0; i < splitItUp.length; i++){
 console.log(splitItUp.join(" "));
 
 //compress a string of characters
+    //console.log(splitItUp.compress(" "));
+
+// print numbers 1 to 100
+let counter = 1
+
+
+
+for(let i = 0; i < 101; i++){
+    //I want to dive i by itself 
+    if(counter % 1 === 0 && counter % i === 0){
+        console.log(i);
+    }
+    // if(i /= i){
+    //     console.log(i);
+    // }   
+    // if(i % i);{
+    //     console.log(i);
+    // }
+    // if(i %= i);{
+    //     console.log(i);
+    // }
+    
+    
+
+}
