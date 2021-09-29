@@ -5,25 +5,26 @@
 // in order to check if 10 is prime, we also need to divide it by all numbers that came before it
 // IF a number is prime, print it to the console!
 
-// let counter = 1
-
-
-
-// for(let i = 0; i < 101; i++){
-//     //I want to dive i by itself 
-//     if(counter % 1 === 0 && counter % i === 0){
-//         console.log(i);
-//     }
-//     // if(i /= i){
-//     //     console.log(i);
-//     // }   
-//     // if(i % i);{
-//     //     console.log(i);
-//     // }
-//     // if(i %= i);{
-//     //     console.log(i);
-//     // }
-    
-    
-
-// }
+function findPrimeNumber(){
+    let counter = 1;
+    for (let i = 1; i < 101 ; i++){
+        counter++;}
+        for (let n = 1; n < i; ++{
+            if(i % n === 0){
+                break;
+            }
+        }
+        if(i === n){
+            console.log(i);
+        }
+    }
+}
+        
+    //     if(number % i ===0){
+    //         return false;
+    //     }
+    //     else{
+    //         console.log(i);
+    //         return true;
+    //     }
+    // }
