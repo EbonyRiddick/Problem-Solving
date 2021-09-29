@@ -10,38 +10,36 @@ console.log(reverseWord);
 
 //capitalze the first letter of each word in a string
 let myphrase ="beautiful lie is a great song";
-//phrase[0].toUpperCase();
-//console.log(phrase[0].toUpperCase() + phrase.substring(1));
+//myPhrase[0].toUpperCase();
+//console.log(myPhrase[0].toUpperCase() + myPhrase.substring(1));
 let splitItUp = myphrase.split(" ");
 
 for(let i = 0; i < splitItUp.length; i++){
     splitItUp[i] = splitItUp[i][0].toUpperCase() + splitItUp[i].substr(1);
 }
 console.log(splitItUp.join(" "));
-
-//compress a string of characters
-    //console.log(splitItUp.compress(" "));
-
-// print numbers 1 to 100
-let counter = 1
+  //console.log(splitItUp.compress(" "));
 
 
 
-for(let i = 0; i < 101; i++){
-    //I want to dive i by itself 
-    if(counter % 1 === 0 && counter % i === 0){
-        console.log(i);
+// determine string of characters: should have characters with multiples
+// count like characters in the string
+// group the like characters
+// repeat count for full length of the string
+// print the new string
+
+let myCharacters = 'aaabbbbbccccaacccbbbaaabbbaaa'
+let counter = 0
+let result = '';
+
+function compressMyString(characters){
+for (let i = 0; i < characters.length; i++){
+     counter++;
+        if(characters[i] !== characters[i+1]){
+         result = result + characters[i] + counter;
+            counter = 0;
+        }
     }
-    // if(i /= i){
-    //     console.log(i);
-    // }   
-    // if(i % i);{
-    //     console.log(i);
-    // }
-    // if(i %= i);{
-    //     console.log(i);
-    // }
-    
-    
-
+    console.log(result);
 }
+compressMyString(myCharacters);
